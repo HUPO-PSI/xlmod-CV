@@ -9,7 +9,7 @@ The draft mapping file for the mzTab validator can be found at https://raw.githu
 
 ## Requesting a new term
 
-Additional semi-structured information about xmlmod can be found at: https://github.com/HUPO-PSI/xlmod-CV#xlmod
+Additional semi-structured information about xmlmod can be found at: https://github.com/HUPO-PSI/xlmod-CV/blob/main/xlmod.md
 
 
 ## Requesting a new term
