@@ -1,8 +1,8 @@
 format-version: 1.2
 data-version: release/2019-10-28
 ontology: xlmod
-date: 23:03:2021 20:08
-saved-by: Paul Thomas
+date: 05:02:2022 20:08
+saved-by: Joshua Klein
 auto-generated-by: OBO-Edit 2.3.1
 default-namespace: XLMOD
 remark: version: 1.1.12
@@ -2957,7 +2957,7 @@ property_value: reactionSites: "1" xsd:nonNegativeInteger
 property_value: spacerLength: "30.0" xsd:float
 is_a: XLMOD:00003 ! label transfer reagent
 relationship: has_handle XLMOD:00051 ! biotin
-relationship: has_reactive_group XLMOD:00107 ! nitrophenyl azide 
+relationship: has_reactive_group XLMOD:00107 ! nitrophenyl azide
 
 [Term]
 id: XLMOD:01826
@@ -3475,7 +3475,7 @@ property_value: reactionSites: "2" xsd:nonNegativeInteger
 property_value: spacerLength: "18.2" xsd:float
 is_a: XLMOD:00006 ! heterofunctional cross-linker
 relationship: has_reactive_group XLMOD:00102 ! Sulfo NHS ester
-relationship: has_reactive_group XLMOD:00107 ! nitrophenyl azide 
+relationship: has_reactive_group XLMOD:00107 ! nitrophenyl azide
 
 [Term]
 id: XLMOD:02029
@@ -4320,7 +4320,7 @@ property_value: spacerLength: "18.5" xsd:float
 is_a: XLMOD:00006 ! heterofunctional cross-linker
 relationship: has_property XLMOD:00014 ! hydrophilic
 relationship: has_reactive_group XLMOD:00102 ! Sulfo NHS ester
-relationship: has_reactive_group XLMOD:00107 ! nitrophenyl azide 
+relationship: has_reactive_group XLMOD:00107 ! nitrophenyl azide
 relationship: is_cleavable XLMOD:00023 ! cleavable S-S bond
 
 [Term]
@@ -4333,7 +4333,7 @@ property_value: spacerLength: "18.2" xsd:float
 is_a: XLMOD:00006 ! heterofunctional cross-linker
 relationship: has_property XLMOD:00013 ! membrane permeable
 relationship: has_reactive_group XLMOD:00101 ! NHS ester
-relationship: has_reactive_group XLMOD:00107 ! nitrophenyl azide 
+relationship: has_reactive_group XLMOD:00107 ! nitrophenyl azide
 
 [Term]
 id: XLMOD:02099
@@ -5139,7 +5139,7 @@ property_value: spacerLength: "9.4" xsd:float
 is_a: XLMOD:00006 ! heterofunctional cross-linker
 is_a: XLMOD:00006 ! heterofunctional cross-linker
 relationship: has_reactive_group XLMOD:00106 ! maleimide
-relationship: has_reactive_group XLMOD:00138 ! carboxyl 
+relationship: has_reactive_group XLMOD:00138 ! carboxyl
 
 [Term]
 id: XLMOD:02169
@@ -6178,7 +6178,7 @@ property_value: spacerLength: "30.7" xsd:float
 is_a: XLMOD:00003 ! label transfer reagent
 relationship: has_handle XLMOD:00051 ! biotin
 relationship: has_reactive_group XLMOD:00118 ! tetrafluorophenyl azide
-relationship: has_reactive_group XLMOD:00121 ! methanethiosulfonate 
+relationship: has_reactive_group XLMOD:00121 ! methanethiosulfonate
 relationship: is_cleavable XLMOD:00023 ! cleavable S-S bond
 
 [Term]
@@ -6193,7 +6193,7 @@ property_value: spacerLength: "30.7" xsd:float
 is_a: XLMOD:00003 ! label transfer reagent
 relationship: has_handle XLMOD:00051 ! biotin
 relationship: has_reactive_group XLMOD:00118 ! tetrafluorophenyl azide
-relationship: has_reactive_group XLMOD:00121 ! methanethiosulfonate 
+relationship: has_reactive_group XLMOD:00121 ! methanethiosulfonate
 
 [Term]
 id: XLMOD:03005
@@ -6294,7 +6294,7 @@ property_value: reactionSites: "3" xsd:nonNegativeInteger
 is_a: XLMOD:00003 ! label transfer reagent
 relationship: has_handle XLMOD:00051 ! biotin
 relationship: has_reactive_group XLMOD:00118 ! tetrafluorophenyl azide
-relationship: has_reactive_group XLMOD:00121 ! methanethiosulfonate 
+relationship: has_reactive_group XLMOD:00121 ! methanethiosulfonate
 relationship: is_cleavable XLMOD:00023 ! cleavable S-S bond
 
 [Term]
