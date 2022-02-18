@@ -7,7 +7,7 @@ but as of 2022-02-04 has been given its own home here.
 The draft mapping file for the mzTab validator can be found at https://raw.githubusercontent.com/nilshoffmann/mzTab/580489542e89f4cf0d2925fda683ef2963f1e883/specification_document-developments/2_0-Metabolomics-Draft/mzTab_2_0-M_mapping.xml
 
 
-## Requesting a new term
+## Other Information
 
 Additional semi-structured information about xmlmod can be found at: https://github.com/HUPO-PSI/xlmod-CV/blob/main/xlmod.md
 
