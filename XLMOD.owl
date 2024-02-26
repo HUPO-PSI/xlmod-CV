@@ -20204,8 +20204,9 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PhoX cross-linker.</obo:IAO_0000115>
+        <obo:minSpacerLength rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</obo:minSpacerLength>
+        <obo:maxSpacerLength rdf:datatype="http://www.w3.org/2001/XMLSchema#float">20.0</obo:maxSpacerLength>
         <obo:reactionSites_ rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</obo:reactionSites_>
-        <obo:spacerLength_ rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0-20.0</obo:spacerLength_>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XLMOD</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XLMOD:02258</oboInOwl:id>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PhoX</rdfs:label>
