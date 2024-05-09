@@ -7,6 +7,7 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xlmod="http://purl.obolibrary.org/obo/xlmod#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/xlmod.owl">
         <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/xlmod/release/2019-10-28/xlmod.owl"/>
@@ -133,6 +134,18 @@
     <!-- http://purl.obolibrary.org/obo/waveLengthRange_ -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/waveLengthRange_"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/xlmod#maxSpacerLength -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/xlmod#maxSpacerLength"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/xlmod#minSpacerLength -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/xlmod#minSpacerLength"/>
     
 
 
@@ -20204,9 +20217,9 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PhoX cross-linker.</obo:IAO_0000115>
-        <obo:minSpacerLength rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</obo:minSpacerLength>
-        <obo:maxSpacerLength rdf:datatype="http://www.w3.org/2001/XMLSchema#float">20.0</obo:maxSpacerLength>
         <obo:reactionSites_ rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</obo:reactionSites_>
+        <xlmod:maxSpacerLength rdf:datatype="http://www.w3.org/2001/XMLSchema#float">20.0</xlmod:maxSpacerLength>
+        <xlmod:minSpacerLength rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</xlmod:minSpacerLength>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XLMOD</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XLMOD:02258</oboInOwl:id>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PhoX</rdfs:label>
@@ -25138,15 +25151,15 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/XLMOD_07116">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XLMOD_06019"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Triethyloxonium tetrafluoroborate.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Triethyloxonium tetrafluo.owlrate.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XLMOD</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XLMOD:07116</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">triethyloxonium tetrafluoroborate</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">triethyloxonium tetrafluo.owlrate</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XLMOD_07116"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Triethyloxonium tetrafluoroborate.</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Triethyloxonium tetrafluo.owlrate.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CAS:368-39-8</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChemSpiderID:2006158</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChemicalBookNo:CB0198800</oboInOwl:hasDbXref>
@@ -25222,15 +25235,15 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/XLMOD_07120">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XLMOD_06019"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Trimethyloxonium tetrafluoroborate.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Trimethyloxonium tetrafluo.owlrate.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XLMOD</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XLMOD:07120</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">trimethyloxonium tetrafluoroborate</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">trimethyloxonium tetrafluo.owlrate</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XLMOD_07120"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Trimethyloxonium tetrafluoroborate.</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Trimethyloxonium tetrafluo.owlrate.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CAS:420-37-1</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChemSpiderID:2016863</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChemicalBookNo:CB3184284</oboInOwl:hasDbXref>
