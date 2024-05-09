@@ -10317,8 +10317,11 @@ relationship: is_reactive_with XLMOD:00028 ! primary amine reactive
 id: XLMOD:09317
 name: DSAU
 def: "Urea crosslinker – C2-arm, NHS ester (DSAU)" [PSI:XL]
+synonym: "C2-Urea-NHS-crosslinker" EXACT []
+synonym: "Urea-crosslinker C2-succinimide" EXACT []
+synonym: "DSAU" EXACT []
 property_value: deadEndFormula: "C 13 H 14 N 4 O 9" xsd:string
 property_value: monoIsotopicMass: "140.02219198" xsd:double
-is_a: XLMOD:00095 ! ammonium amidation cross-linker related chemical modification
-relationship: is_partially_reacted XLMOD:00021 ! ammonium amidated
-relationship: is_side_product_of XLMOD:02044 ! DSA
+is_a: XLMOD:00005 ! homofunctional cross-linker
+relationship: has_reactive_group XLMOD:00101 ! NHS ester
+relationship: is_cleavable XLMOD:00067 ! CID cleavable C-S bond
