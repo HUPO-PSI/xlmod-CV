@@ -6131,7 +6131,8 @@ id: XLMOD:02258
 name: PhoX
 def: "PhoX cross-linker." [PMID:31477730]
 property_value: reactionSites: "2" xsd:nonNegativeInteger
-property_value: spacerLength: "5.0-20.0" xsd:float
+property_value: minSpacerLength "5.0" xsd:float
+property_value: maxSpacerLength "20.0" xsd:float
 is_a: XLMOD:00005 ! homofunctional cross-linker
 relationship: has_handle XLMOD:00173 ! phosphonic acid
 relationship: has_reactive_group XLMOD:00101 ! NHS ester
