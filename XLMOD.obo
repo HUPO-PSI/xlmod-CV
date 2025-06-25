@@ -4648,6 +4648,8 @@ relationship: is_cleavable XLMOD:00023 ! cleavable S-S bond
 id: XLMOD:02126
 name: DSSO
 def: "Disuccinimidyl sulfoxide." [PubChem_Compound:86106597, ChemSpiderID:65999926, PMID:20736410, PMID:27417384]
+property_value: bridgeFormula: "C6 O3 S1 H6" xsd:string
+property_value: monoIsotopicMass: "158.0037648" xsd:double
 property_value: reactionSites: "2" xsd:nonNegativeInteger
 property_value: spacerLength: "10.1" xsd:float
 is_a: XLMOD:00005 ! homofunctional cross-linker
