@@ -10326,4 +10326,4 @@ property_value: spacerLength: "7.7" xsd:float
 property_value: monoIsotopicMass: "140.02219198" xsd:double
 is_a: XLMOD:00005 ! homofunctional cross-linker
 relationship: has_reactive_group XLMOD:00101 ! NHS ester
-relationship: is_cleavable XLMOD:00067 ! CID cleavable C-S bond
+relationship: is_cleavable XLMOD:00035 ! CID cleavable
