@@ -10320,7 +10320,9 @@ def: "Urea crosslinker – C2-arm, NHS ester (DSAU)" [PSI:XL]
 synonym: "C2-Urea-NHS-crosslinker" EXACT []
 synonym: "Urea-crosslinker C2-succinimide" EXACT []
 synonym: "DSAU" EXACT []
-property_value: deadEndFormula: "C 13 H 14 N 4 O 9" xsd:string
+property_value: bridgeFormula: "C5 H4 N2 O3" xsd:string
+property_value: reactionSites: "2" xsd:nonNegativeInteger
+property_value: spacerLength: "7.7" xsd:float
 property_value: monoIsotopicMass: "140.02219198" xsd:double
 is_a: XLMOD:00005 ! homofunctional cross-linker
 relationship: has_reactive_group XLMOD:00101 ! NHS ester
