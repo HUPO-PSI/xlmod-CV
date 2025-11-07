@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: release/2025-11-07
+data-version: 1.5.0
 ontology: xlmod
 date: 11:07:2025 20:08
 saved-by: Joshua Klein
@@ -10314,3 +10314,18 @@ synonym: "TNBSA" EXACT []
 synonym: "Picrylsulfonic acid" EXACT []
 is_a: XLMOD:06010 ! LCMS derivatization reagent
 relationship: is_reactive_with XLMOD:00028 ! primary amine reactive
+
+[Term]
+id: XLMOD:09317
+name: DSAU
+def: "Urea crosslinker – C2-arm, NHS ester (DSAU)" [PSI:XL]
+synonym: "C2-Urea-NHS-crosslinker" EXACT []
+synonym: "Urea-crosslinker C2-succinimide" EXACT []
+synonym: "DSAU" EXACT []
+property_value: bridgeFormula: "C5 H4 N2 O3" xsd:string
+property_value: reactionSites: "2" xsd:nonNegativeInteger
+property_value: spacerLength: "7.7" xsd:float
+property_value: monoIsotopicMass: "140.02219198" xsd:double
+is_a: XLMOD:00005 ! homofunctional cross-linker
+relationship: has_reactive_group XLMOD:00101 ! NHS ester
+relationship: is_cleavable XLMOD:00035 ! CID cleavable
