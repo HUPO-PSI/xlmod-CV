@@ -10,7 +10,7 @@
      xmlns:xlmod="http://purl.obolibrary.org/obo/xlmod#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/xlmod.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/xlmod/release/2025-11-07/xlmod.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/xlmod/1.5.0/xlmod.owl"/>
         <oboInOwl:auto-generated-by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBO-Edit 2.3.1</oboInOwl:auto-generated-by>
         <oboInOwl:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">11:07:2025 20:08</oboInOwl:date>
         <oboInOwl:default-namespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XLMOD</oboInOwl:default-namespace>
@@ -34818,6 +34818,43 @@
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChemSpiderID:10577</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChemicalBookNo:CB3737855</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem_Compound:11045</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XLMOD_09317 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/XLMOD_09317">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XLMOD_00005"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/xlmod#has_reactive_group"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XLMOD_00101"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/xlmod#is_cleavable"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XLMOD_00035"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Urea crosslinker – C2-arm, NHS ester (DSAU)</obo:IAO_0000115>
+        <obo:bridgeFormula_ rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C5 H4 N2 O3</obo:bridgeFormula_>
+        <obo:monoIsotopicMass_ rdf:datatype="http://www.w3.org/2001/XMLSchema#double">140.02219198</obo:monoIsotopicMass_>
+        <obo:reactionSites_ rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</obo:reactionSites_>
+        <obo:spacerLength_ rdf:datatype="http://www.w3.org/2001/XMLSchema#float">7.7</obo:spacerLength_>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C2-Urea-NHS-crosslinker</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DSAU</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Urea-crosslinker C2-succinimide</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XLMOD</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XLMOD:09317</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DSAU</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XLMOD_09317"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Urea crosslinker – C2-arm, NHS ester (DSAU)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PSI:XL</oboInOwl:hasDbXref>
     </owl:Axiom>
 </rdf:RDF>
 
