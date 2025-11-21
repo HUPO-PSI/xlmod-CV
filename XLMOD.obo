@@ -10346,7 +10346,7 @@ is_a: XLMOD:09318 ! enzymatic generated cross-link
 id: XLMOD:09320
 name: QKiso
 def: "epsilon-(gamma-L-Glutamyl)lysine" [PubChem_Compound:4093968, PubChem CID:7015685, Unimod:2026, ChemSpider ID:5378717, CAS Registry Number:17105-15-6, CHEBI:133752]
-synonym: "Xlink:KQisopeptide" EXACT []
+synonym: "Xlink:QKisopeptide" EXACT []
 synonym: "TG-XL" EXACT []
 synonym: "TG" EXACT []
 synonym: "QK-XL" EXACT []
