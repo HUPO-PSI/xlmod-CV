@@ -3219,6 +3219,9 @@ property_value: bridgeFormula: "-H2" xsd:string
 property_value: monoIsotopicMass: "-2.01565007" xsd:double
 property_value: reactionSites: "2" xsd:nonNegativeInteger
 property_value: specificities: "(C)&(C)" xsd:string
+property_value: stubFormula "ETD = -H1 : " xsd:string
+property_value: stubFormula "ETD = -H1 : H1" xsd:string
+property_value: stubFormula "ETD = -H2 -S1 : S1" xsd:string
 is_a: XLMOD:00005 ! homofunctional cross-linker
 is_a: XLMOD:00008 ! zero-length cross-linker
 
@@ -4579,11 +4582,16 @@ def: "NHS-amino butyric acid-urea-amino butyric acid-NHS." [CAS:1240387-33-0, Pu
 synonym: "NHS-BuUrBu-NHS" EXACT []
 synonym: "Disuccinimidyl dibutyric urea" EXACT []
 synonym: "DSBU" EXACT []
-property_value: CID_Fragment: "85.053" xsd:double
-property_value: CID_Fragment: "111.032" xsd:double
+property_value: bridgeFormula: "C9 H12 N2 O3" xsd:string
+property_value: monoIsotopicMass: "196.084792" xsd:double
 property_value: doubletDeltaMass: "25.979" xsd:double
 property_value: reactionSites: "2" xsd:nonNegativeInteger
 property_value: spacerLength: "12.5" xsd:float
+property_value: stubFormula "CID = C3 H7 N1 O1 : C5 H5 N1 O2" xsd:string
+property_value: stubFormula "CID =  : C9 H12 N2 O3" xsd:string
+property_value: stubFormula "CID = C5 H5 N1 O2 : C4 H7 N1 O1" xsd:string
+property_value: neutralLossFormula: "-H2 -O1" xsd:string
+property_value: neutralLossFormula: "-H3 -N1" xsd:string
 is_a: XLMOD:00005 ! homofunctional cross-linker
 relationship: has_neutral_loss_reporter XLMOD:00057 ! generic neutral loss reporter
 relationship: has_reactive_group XLMOD:00101 ! NHS ester
@@ -4652,6 +4660,7 @@ property_value: bridgeFormula: "C6 O3 S1 H6" xsd:string
 property_value: monoIsotopicMass: "158.0037648" xsd:double
 property_value: reactionSites: "2" xsd:nonNegativeInteger
 property_value: spacerLength: "10.1" xsd:float
+property_value: stubFormula "CID = H1 C3 -N1 O3 S1, -H2 -O1 : H1 C3 -N1 O2" xsd:string
 is_a: XLMOD:00005 ! homofunctional cross-linker
 relationship: has_reactive_group XLMOD:00101 ! NHS ester
 relationship: is_cleavable XLMOD:00067 ! CID cleavable C-S bond
@@ -6132,6 +6141,8 @@ relationship: has_reactive_group XLMOD:00171 ! Ortho-phthalaldehyde
 id: XLMOD:02258
 name: PhoX
 def: "PhoX cross-linker." [PMID:31477730]
+property_value: bridgeFormula: "C8 H3 O5 P1" xsd:string
+property_value: monoIsotopicMass: "209.971810" xsd:double
 property_value: reactionSites: "2" xsd:nonNegativeInteger
 property_value: minSpacerLength "5.0" xsd:float
 property_value: maxSpacerLength "20.0" xsd:float
