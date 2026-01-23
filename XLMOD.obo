@@ -4589,7 +4589,7 @@ property_value: reactionSites: "2" xsd:nonNegativeInteger
 property_value: spacerLength: "12.5" xsd:float
 property_value: stubFormula "CID = C3 H7 N1 O1 : C5 H5 N1 O2" xsd:string
 property_value: stubFormula "CID =  : C9 H12 N2 O3" xsd:string
-property_value: stubFormula "CID = C5 H5 N1 O2 : C4 H7 N1 O1" xsd:string
+property_value: stubFormula "CID = C5 H7 N1 O2 : C4 H5 N1 O1" xsd:string
 property_value: neutralLossFormula: "-H2 -O1" xsd:string
 property_value: neutralLossFormula: "-H3 -N1" xsd:string
 is_a: XLMOD:00005 ! homofunctional cross-linker
