@@ -21,3 +21,23 @@ the request already formatted as an OBO term is helpful too! Don't worry about f
 that can be handled near the end.
 
 If you're requesting multiple related terms, you can submit them in a single issue/pull request.
+
+## Syntax for rules
+
+| Property value | Type | Syntax | Explanation | Examples |
+| --- | --- | --- | --- | --- |
+| bridgeFormula | xsd:string | Molecular formula, see below | The formula of the modification when bound to at least two amino acids. | `C7 D10 H2 N4` `-C1 -H2 O1` `13C6 H6 O2` |
+| deadEndFormula | xsd:string | Molecular formula, see below | The formula of the modification when bound to one amino acid, the other end is neutralised and this neutralising agent is included in the formula. | `C28 H41 N6 O11 S1` |
+| monoIsotopicMass | xsd:double | number | The monoisotopic mass of the formula (deadEnd or bridge depending on the entry). | `-2.01565007` `156.07864431` |
+| reactionSites | xsd:nonNegativeInteger | number | The number of reaction sides on this cross-linker, can be 1, 2, 3, or even higher. | `1` `2` `3` |
+| specificities | xsd:string | Sites are separated by an ampersand `&`. Each site has a list of possible peptide locations separated by commas and wrapped in brackets. | These are the locations where this cross-linker binds. If only one site is given (no ampersand is present) but `reactionSites` is 2 the reaction sides both have the same specificity. | `(C)&(C)` `(K,Protein N-term)` |
+| secondarySpecificities | xsd:string | See above | These are the locations where this cross-linker can also bind but has a much lower rate. | `(S,T,Y)` |
+| baseSpecificities | xsd:string | Sites are separated by an ampersand `&`. Each site has a list of possible DNA locations separated by commas and wrapped in brackets. | These are the locations where this cross-linker binds. If only one site is given (no ampersand is present) but `reactionSites` is 2 the reaction sides both have the same specificity. | `(Guanine)` |
+| secondarybaseSpecificities | xsd:string | See above | These are the locations where this cross-linker can also bind but has a much lower rate. | `(Adenine, Cytosine)` |
+| stubDefinition | xsd:string | A list of fragmentation techniques followed by an equals sign `=`, followed by a formula indicating the first stub, possibly followed by a list of possible neutral losses each preceded by a comma, followed by a colon `:` followed by a formula denoting the second stub, again possibly followed by neutral losses. | This indicates the possible stubs that can be generated when doing mass spectrometry fragmentation. Multiple definitions can be given for each cross-linker to indicate different stubs. A stub formula can be empty if no modification is left at that site. | `CID = H4 C3 O2 S1, -H2 -O1 : H2 C3 O1` `ETD = -H1 : ` |
+| spacerLength | xsd:float | number | This indicates the length of the linker in angstrom. | `7.7` |
+| doubletDeltaMass | xsd:double | number | The difference in mass between stubs. | `5.0168` |
+| hydrophilicPEGchain | xsd:nonNegativeInteger | number | The length of the PEG chain. | `3` |
+
+### Molecular formula
+Element symbols followed by their occurrence, each element is separated by spaces. Negative occurrence is indicated by starting the element block with a minus. Isotopes are indicated by writing the isotope number before the element, behind a minus if the occurrence is negative.

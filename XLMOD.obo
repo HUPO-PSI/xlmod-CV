@@ -1025,7 +1025,7 @@ relationship: is_reactive_with XLMOD:06510 ! ketone reactive
 id: XLMOD:00134
 name: psoralen
 def: "A photoreactive group that reacts with pyrimidines, especially thymines of nucleic acids." [PSI:XL]
-property_value: specificities: "(Thy)" xsd:string
+property_value: baseSpecificities: "(Thy)" xsd:string
 is_a: XLMOD:00100 ! reactive group
 relationship: is_activatable XLMOD:00149 ! photoactivatable
 relationship: is_reactive_with XLMOD:00048 ! nucleic acid reactive
@@ -3219,9 +3219,9 @@ property_value: bridgeFormula: "-H2" xsd:string
 property_value: monoIsotopicMass: "-2.01565007" xsd:double
 property_value: reactionSites: "2" xsd:nonNegativeInteger
 property_value: specificities: "(C)&(C)" xsd:string
-property_value: stubFormula "ETD = -H1 : " xsd:string
-property_value: stubFormula "ETD = -H1 : H1" xsd:string
-property_value: stubFormula "ETD = -H2 -S1 : S1" xsd:string
+property_value: stubDefinition "ETD = -H1 : " xsd:string
+property_value: stubDefinition "ETD = -H1 : H1" xsd:string
+property_value: stubDefinition "ETD = -H2 -S1 : S1" xsd:string
 is_a: XLMOD:00005 ! homofunctional cross-linker
 is_a: XLMOD:00008 ! zero-length cross-linker
 
@@ -4587,9 +4587,9 @@ property_value: monoIsotopicMass: "196.084792" xsd:double
 property_value: doubletDeltaMass: "25.979" xsd:double
 property_value: reactionSites: "2" xsd:nonNegativeInteger
 property_value: spacerLength: "12.5" xsd:float
-property_value: stubFormula "CID = C3 H7 N1 O1 : C5 H5 N1 O2" xsd:string
-property_value: stubFormula "CID =  : C9 H12 N2 O3" xsd:string
-property_value: stubFormula "CID = C5 H7 N1 O2 : C4 H5 N1 O1" xsd:string
+property_value: stubDefinition "CID = C3 H7 N1 O1 : C5 H5 N1 O2" xsd:string
+property_value: stubDefinition "CID =  : C9 H12 N2 O3" xsd:string
+property_value: stubDefinition "CID = C5 H7 N1 O2 : C4 H5 N1 O1" xsd:string
 property_value: neutralLossFormula: "-H2 -O1" xsd:string
 property_value: neutralLossFormula: "-H3 -N1" xsd:string
 is_a: XLMOD:00005 ! homofunctional cross-linker
@@ -4660,7 +4660,7 @@ property_value: bridgeFormula: "C6 O3 S1 H6" xsd:string
 property_value: monoIsotopicMass: "158.0037648" xsd:double
 property_value: reactionSites: "2" xsd:nonNegativeInteger
 property_value: spacerLength: "10.1" xsd:float
-property_value: stubFormula "CID = H4 C3 O2 S1, -H2 -O1 : H2 C3 O1" xsd:string
+property_value: stubDefinition "CID = H4 C3 O2 S1, -H2 -O1 : H2 C3 O1" xsd:string
 is_a: XLMOD:00005 ! homofunctional cross-linker
 relationship: has_reactive_group XLMOD:00101 ! NHS ester
 relationship: is_cleavable XLMOD:00067 ! CID cleavable C-S bond
