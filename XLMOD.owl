@@ -95,6 +95,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/neutralLossFormula_ -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/neutralLossFormula_"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/reactionSites_ -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/reactionSites_"/>
@@ -146,6 +152,12 @@
     <!-- http://purl.obolibrary.org/obo/xlmod#minSpacerLength -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/xlmod#minSpacerLength"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/xlmod#stubFormula -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/xlmod#stubFormula"/>
     
 
 
@@ -10716,6 +10728,9 @@
         <obo:monoIsotopicMass_ rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-2.01565007</obo:monoIsotopicMass_>
         <obo:reactionSites_ rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</obo:reactionSites_>
         <obo:specificities_ rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(C)&amp;(C)</obo:specificities_>
+        <xlmod:stubFormula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ETD = -H1 : </xlmod:stubFormula>
+        <xlmod:stubFormula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ETD = -H1 : H1</xlmod:stubFormula>
+        <xlmod:stubFormula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ETD = -H2 -S1 : S1</xlmod:stubFormula>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XLMOD</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XLMOD:02009</oboInOwl:id>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disulfide</rdfs:label>
@@ -15072,12 +15087,17 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XLMOD_00035"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:CID_Fragment_ rdf:datatype="http://www.w3.org/2001/XMLSchema#double">111.032</obo:CID_Fragment_>
-        <obo:CID_Fragment_ rdf:datatype="http://www.w3.org/2001/XMLSchema#double">85.053</obo:CID_Fragment_>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NHS-amino butyric acid-urea-amino butyric acid-NHS.</obo:IAO_0000115>
+        <obo:bridgeFormula_ rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C9 H12 N2 O3</obo:bridgeFormula_>
         <obo:doubletDeltaMass_ rdf:datatype="http://www.w3.org/2001/XMLSchema#double">25.979</obo:doubletDeltaMass_>
+        <obo:monoIsotopicMass_ rdf:datatype="http://www.w3.org/2001/XMLSchema#double">196.084792</obo:monoIsotopicMass_>
+        <obo:neutralLossFormula_ rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-H2 -O1</obo:neutralLossFormula_>
+        <obo:neutralLossFormula_ rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-H3 -N1</obo:neutralLossFormula_>
         <obo:reactionSites_ rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</obo:reactionSites_>
         <obo:spacerLength_ rdf:datatype="http://www.w3.org/2001/XMLSchema#float">12.5</obo:spacerLength_>
+        <xlmod:stubFormula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CID =  : C9 H12 N2 O3</xlmod:stubFormula>
+        <xlmod:stubFormula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CID = C3 H7 N1 O1 : C5 H5 N1 O2</xlmod:stubFormula>
+        <xlmod:stubFormula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CID = C5 H7 N1 O2 : C4 H5 N1 O1</xlmod:stubFormula>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DSBU</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disuccinimidyl dibutyric urea</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NHS-BuUrBu-NHS</oboInOwl:hasExactSynonym>
@@ -15294,6 +15314,7 @@
         <obo:monoIsotopicMass_ rdf:datatype="http://www.w3.org/2001/XMLSchema#double">158.0037648</obo:monoIsotopicMass_>
         <obo:reactionSites_ rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</obo:reactionSites_>
         <obo:spacerLength_ rdf:datatype="http://www.w3.org/2001/XMLSchema#float">10.1</obo:spacerLength_>
+        <xlmod:stubFormula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CID = H4 C3 O2 S1, -H2 -O1 : H2 C3 O1</xlmod:stubFormula>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XLMOD</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XLMOD:02126</oboInOwl:id>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DSSO</rdfs:label>
@@ -20219,6 +20240,8 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PhoX cross-linker.</obo:IAO_0000115>
+        <obo:bridgeFormula_ rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C8 H3 O5 P1</obo:bridgeFormula_>
+        <obo:monoIsotopicMass_ rdf:datatype="http://www.w3.org/2001/XMLSchema#double">209.97181</obo:monoIsotopicMass_>
         <obo:reactionSites_ rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</obo:reactionSites_>
         <xlmod:maxSpacerLength rdf:datatype="http://www.w3.org/2001/XMLSchema#float">20.0</xlmod:maxSpacerLength>
         <xlmod:minSpacerLength rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</xlmod:minSpacerLength>
