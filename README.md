@@ -38,6 +38,7 @@ If you're requesting multiple related terms, you can submit them in a single iss
 | spacerLength | xsd:float | number | This indicates the length of the linker in angstrom. | `7.7` |
 | doubletDeltaMass | xsd:double | number | The difference in mass between stubs. | `5.0168` |
 | hydrophilicPEGchain | xsd:nonNegativeInteger | number | The length of the PEG chain. | `3` |
+| reporterMass | xsd:double | number | The mass of a diagnostic ion. | `555.2481` |
 
 ### Molecular formula
 Element symbols followed by their occurrence, each element is separated by spaces. Negative occurrence is indicated by starting the element block with a minus. Isotopes are indicated by writing the isotope number before the element, behind a minus if the occurrence is negative.
