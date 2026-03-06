@@ -3603,6 +3603,8 @@ name: CDI
 def: "N,N'-Carbonyldiimidazole." [CAS:530-62-1, PubChem_Compound:68263, Beilstein:6826, MDL:MFCD00005286, ChemSpiderID:61561, ChemicalBookNo:CB0215374]
 comment: Used to convert alcohols and amines into carbamates, esters, and ureas.
 synonym: "1,1'-Carbonyldiimidazole" EXACT []
+property_value: bridgeFormula: "C1 -H2 O1" xsd:string
+property_value: stubDefinition "CID = : C1 -H2 O1" xsd:string
 property_value: reactionSites: "2" xsd:nonNegativeInteger
 is_a: XLMOD:00008 ! zero-length cross-linker
 
