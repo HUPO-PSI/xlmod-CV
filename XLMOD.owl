@@ -15096,7 +15096,6 @@
         <obo:reactionSites_ rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</obo:reactionSites_>
         <obo:spacerLength_ rdf:datatype="http://www.w3.org/2001/XMLSchema#float">12.5</obo:spacerLength_>
         <xlmod:stubFormula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CID =  : C9 H12 N2 O3</xlmod:stubFormula>
-        <xlmod:stubFormula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CID = C3 H7 N1 O1 : C5 H5 N1 O2</xlmod:stubFormula>
         <xlmod:stubFormula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CID = C5 H7 N1 O2 : C4 H5 N1 O1</xlmod:stubFormula>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DSBU</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disuccinimidyl dibutyric urea</oboInOwl:hasExactSynonym>
