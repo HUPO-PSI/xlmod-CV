@@ -1,7 +1,7 @@
 format-version: 1.2
-data-version: 1.5.1
+data-version: 1.5.2
 ontology: xlmod
-date: 11:07:2025 17:25
+date: 13:03:2026 17:30
 saved-by: Douwe Schulte
 auto-generated-by: OBO-Edit 2.3.1
 default-namespace: XLMOD
@@ -3603,6 +3603,8 @@ name: CDI
 def: "N,N'-Carbonyldiimidazole." [CAS:530-62-1, PubChem_Compound:68263, Beilstein:6826, MDL:MFCD00005286, ChemSpiderID:61561, ChemicalBookNo:CB0215374]
 comment: Used to convert alcohols and amines into carbamates, esters, and ureas.
 synonym: "1,1'-Carbonyldiimidazole" EXACT []
+property_value: bridgeFormula: "C1 -H2 O1" xsd:string
+property_value: stubDefinition "CID = : C1 -H2 O1" xsd:string
 property_value: reactionSites: "2" xsd:nonNegativeInteger
 is_a: XLMOD:00008 ! zero-length cross-linker
 
