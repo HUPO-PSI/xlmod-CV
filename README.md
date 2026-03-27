@@ -39,7 +39,7 @@ If you're requesting multiple related terms, you can submit them in a single iss
 | spacerLength | xsd:float | number | This indicates the length of the linker in angstrom. | `7.7` |
 | minSpacerLength | xsd:float | number | This indicates the minimal length of the linker in angstrom. | `5.0` |
 | maxSpacerLength | xsd:float | number | This indicates the maximal length of the linker in angstrom. | `20.0` |
-| doubletDeltaMass | xsd:double | number | The difference in mass between stubs. | `5.0168` |
+| doubletDeltaMass | xsd:double | number | The mass difference in Da to the non-labeled species  | `5.0168` |
 | hydrophilicPEGchain | xsd:nonNegativeInteger | number | The length of the PEG chain. | `3` |
 | reporterMass | xsd:double | number | The mass of a diagnostic ion. | `555.2481` |
 | maxAbsorption | xsd:string | Number followed by a space followed by the unit (`nm`) | Peak of the absorption spectrum. | `236 nm` |
