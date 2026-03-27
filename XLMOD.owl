@@ -10,9 +10,9 @@
      xmlns:xlmod="http://purl.obolibrary.org/obo/xlmod#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/xlmod.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/xlmod/1.5.2/xlmod.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/xlmod/1.5.3/xlmod.owl"/>
         <oboInOwl:auto-generated-by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBO-Edit 2.3.1</oboInOwl:auto-generated-by>
-        <oboInOwl:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">13:03:2026 17:30</oboInOwl:date>
+        <oboInOwl:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">27:03:2026 16:02</oboInOwl:date>
         <oboInOwl:default-namespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XLMOD</oboInOwl:default-namespace>
         <oboInOwl:hasOBOFormatVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.2</oboInOwl:hasOBOFormatVersion>
         <oboInOwl:saved-by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Douwe Schulte</oboInOwl:saved-by>
@@ -158,12 +158,6 @@
     <!-- http://purl.obolibrary.org/obo/xlmod#stubDefinition -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/xlmod#stubDefinition"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/xlmod#stubFormula -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/xlmod#stubFormula"/>
     
 
 
@@ -3451,7 +3445,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A photoreactive group that reacts with pyrimidines, especially thymines of nucleic acids.</obo:IAO_0000115>
-        <obo:specificities_ rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(Thy)</obo:specificities_>
+        <obo:baseSpecificities_ rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(Thymine)</obo:baseSpecificities_>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XLMOD</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XLMOD:00134</oboInOwl:id>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">psoralen</rdfs:label>
@@ -10734,9 +10728,9 @@
         <obo:monoIsotopicMass_ rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-2.01565007</obo:monoIsotopicMass_>
         <obo:reactionSites_ rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</obo:reactionSites_>
         <obo:specificities_ rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(C)&amp;(C)</obo:specificities_>
-        <xlmod:stubFormula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ETD = -H1 : </xlmod:stubFormula>
-        <xlmod:stubFormula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ETD = -H1 : H1</xlmod:stubFormula>
-        <xlmod:stubFormula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ETD = -H2 -S1 : S1</xlmod:stubFormula>
+        <xlmod:stubDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ETD = -H1 : </xlmod:stubDefinition>
+        <xlmod:stubDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ETD = -H1 : H1</xlmod:stubDefinition>
+        <xlmod:stubDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ETD = -H2 -S1 : S1</xlmod:stubDefinition>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XLMOD</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XLMOD:02009</oboInOwl:id>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disulfide</rdfs:label>
@@ -15103,8 +15097,8 @@
         <obo:neutralLossFormula_ rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-H3 -N1</obo:neutralLossFormula_>
         <obo:reactionSites_ rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</obo:reactionSites_>
         <obo:spacerLength_ rdf:datatype="http://www.w3.org/2001/XMLSchema#float">12.5</obo:spacerLength_>
-        <xlmod:stubFormula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CID =  : C9 H12 N2 O3</xlmod:stubFormula>
-        <xlmod:stubFormula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CID = C5 H7 N1 O2 : C4 H5 N1 O1</xlmod:stubFormula>
+        <xlmod:stubDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CID =  : C9 H12 N2 O3</xlmod:stubDefinition>
+        <xlmod:stubDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CID = C5 H7 N1 O2 : C4 H5 N1 O1</xlmod:stubDefinition>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DSBU</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disuccinimidyl dibutyric urea</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NHS-BuUrBu-NHS</oboInOwl:hasExactSynonym>
@@ -15321,7 +15315,7 @@
         <obo:monoIsotopicMass_ rdf:datatype="http://www.w3.org/2001/XMLSchema#double">158.0037648</obo:monoIsotopicMass_>
         <obo:reactionSites_ rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</obo:reactionSites_>
         <obo:spacerLength_ rdf:datatype="http://www.w3.org/2001/XMLSchema#float">10.1</obo:spacerLength_>
-        <xlmod:stubFormula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CID = H4 C3 O2 S1, -H2 -O1 : H2 C3 O1</xlmod:stubFormula>
+        <xlmod:stubDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CID = H4 C3 O2 S1, -H2 -O1 : H2 C3 O1</xlmod:stubDefinition>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XLMOD</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XLMOD:02126</oboInOwl:id>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DSSO</rdfs:label>
