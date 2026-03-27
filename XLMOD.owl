@@ -10,9 +10,9 @@
      xmlns:xlmod="http://purl.obolibrary.org/obo/xlmod#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/xlmod.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/xlmod/1.5.1/xlmod.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/xlmod/1.5.2/xlmod.owl"/>
         <oboInOwl:auto-generated-by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBO-Edit 2.3.1</oboInOwl:auto-generated-by>
-        <oboInOwl:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">11:07:2025 17:25</oboInOwl:date>
+        <oboInOwl:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">13:03:2026 17:30</oboInOwl:date>
         <oboInOwl:default-namespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XLMOD</oboInOwl:default-namespace>
         <oboInOwl:hasOBOFormatVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.2</oboInOwl:hasOBOFormatVersion>
         <oboInOwl:saved-by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Douwe Schulte</oboInOwl:saved-by>
@@ -152,6 +152,12 @@
     <!-- http://purl.obolibrary.org/obo/xlmod#minSpacerLength -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/xlmod#minSpacerLength"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/xlmod#stubDefinition -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/xlmod#stubDefinition"/>
     
 
 
@@ -11904,7 +11910,9 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/XLMOD_02036">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XLMOD_00008"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N,N&apos;-Carbonyldiimidazole.</obo:IAO_0000115>
+        <obo:bridgeFormula_ rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C1 -H2 O1</obo:bridgeFormula_>
         <obo:reactionSites_ rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</obo:reactionSites_>
+        <xlmod:stubDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CID = : C1 -H2 O1</xlmod:stubDefinition>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1,1&apos;-Carbonyldiimidazole</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XLMOD</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XLMOD:02036</oboInOwl:id>
@@ -15096,7 +15104,6 @@
         <obo:reactionSites_ rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</obo:reactionSites_>
         <obo:spacerLength_ rdf:datatype="http://www.w3.org/2001/XMLSchema#float">12.5</obo:spacerLength_>
         <xlmod:stubFormula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CID =  : C9 H12 N2 O3</xlmod:stubFormula>
-        <xlmod:stubFormula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CID = C3 H7 N1 O1 : C5 H5 N1 O2</xlmod:stubFormula>
         <xlmod:stubFormula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CID = C5 H7 N1 O2 : C4 H5 N1 O1</xlmod:stubFormula>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DSBU</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disuccinimidyl dibutyric urea</oboInOwl:hasExactSynonym>
