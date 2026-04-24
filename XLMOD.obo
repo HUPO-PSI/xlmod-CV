@@ -3121,38 +3121,38 @@ id: XLMOD:02002
 name: DSS-d4
 def: "Deuterium labelled disuccinimidyl 2,2,7,7-suberate." [PubChem_Compound:91757798, PMID:11354472]
 property_value: bridgeFormula: "C8 D4 H6 O2" xsd:string
-property_value: doubletDeltaMass: "4.02508" xsd:double
 property_value: monoIsotopicMass: "142.093186586" xsd:double
 property_value: reactionSites: "2" xsd:nonNegativeInteger
 property_value: spacerLength: "11.4" xsd:float
 is_a: XLMOD:00005 ! homofunctional cross-linker
 relationship: has_reactive_group XLMOD:00101 ! NHS ester
 relationship: is_labelled XLMOD:00010 ! deuterium labelled
+relationship: is_labelled_version_of XLMOD:02001 ! DSS
 
 [Term]
 id: XLMOD:02003
 name: DSS-d12
 def: "Deuterium labelled disuccinimidyl 2,2,3,3,4,4,5,5,6,6,7,7-suberate." [PSI:XL, PMID:11354472, PMID:16944939]
 property_value: bridgeFormula: "C8 D10 O2" xsd:string
-property_value: doubletDeltaMass: "12.07573" xsd:double
 property_value: monoIsotopicMass: "150.143400538" xsd:double
 property_value: reactionSites: "2" xsd:nonNegativeInteger
 property_value: spacerLength: "11.4" xsd:float
 is_a: XLMOD:00005 ! homofunctional cross-linker
 relationship: has_reactive_group XLMOD:00101 ! NHS ester
 relationship: is_labelled XLMOD:00010 ! deuterium labelled
+relationship: is_labelled_version_of XLMOD:02001 ! DSS
 
 [Term]
 id: XLMOD:02004
 name: BS3-d4
 def: "Deuterium labelled (bis(sulfosuccinimidyl) 2,2,7,7-suberate)." [PubChem_Compound:91757801]
-property_value: doubletDeltaMass: "4.02508" xsd:double
 property_value: monoIsotopicMass: "142.093186586" xsd:double
 property_value: reactionSites: "2" xsd:nonNegativeInteger
 property_value: spacerLength: "11.4" xsd:float
 is_a: XLMOD:00005 ! homofunctional cross-linker
 relationship: has_reactive_group XLMOD:00102 ! Sulfo NHS ester
 relationship: is_labelled XLMOD:00010 ! deuterium labelled
+relationship: is_labelled_version_of XLMOD:02000 ! BS3
 
 [Term]
 id: XLMOD:02005
@@ -3193,7 +3193,6 @@ id: XLMOD:02007
 name: DSG-d4
 def: "Deuterium labelled disuccinimidyl 2,2,4,4-glutarate." [PubChem_Compound:91757797]
 property_value: bridgeFormula: "C5 D4 O2" xsd:string
-property_value: doubletDeltaMass: "4.02508" xsd:double
 property_value: monoIsotopicMass: "100.046236376" xsd:double
 property_value: reactionSites: "2" xsd:nonNegativeInteger
 property_value: spacerLength: "7.7" xsd:float
@@ -3201,6 +3200,7 @@ is_a: XLMOD:00005 ! homofunctional cross-linker
 relationship: has_property XLMOD:00013 ! membrane permeable
 relationship: has_reactive_group XLMOD:00101 ! NHS ester
 relationship: is_labelled XLMOD:00010 ! deuterium labelled
+relationship: is_labelled_version_of XLMOD:02006 ! DSG
 
 [Term]
 id: XLMOD:02008
@@ -3208,13 +3208,13 @@ name: BS2G-d4
 def: "Deuterium labelled bis(sulfosuccinimidyl) 2,2,4,4-glutarate." [PubChem_Compound:91757799]
 synonym: "DSSG-d4" EXACT []
 property_value: bridgeFormula: "C5 D4 O2" xsd:string
-property_value: doubletDeltaMass: "4.02508" xsd:double
 property_value: monoIsotopicMass: "100.046236376" xsd:double
 property_value: reactionSites: "2" xsd:nonNegativeInteger
 property_value: spacerLength: "7.7" xsd:float
 is_a: XLMOD:00005 ! homofunctional cross-linker
 relationship: has_reactive_group XLMOD:00102 ! Sulfo NHS ester
 relationship: is_labelled XLMOD:00010 ! deuterium labelled
+relationship: is_labelled_version_of XLMOD:02005 ! BS2G
 
 [Term]
 id: XLMOD:02009
@@ -3511,7 +3511,6 @@ id: XLMOD:02030
 name: DSP-d8
 def: "Deuterium labelled Dithiobis[1,1,2,2,2,2,3,3-succinimidyl propionate." [PubChem_Compound:91757796]
 property_value: bridgeFormula: "C6 D6 O2 S2" xsd:string
-property_value: doubletDeltaMass: "8.05016" xsd:double
 property_value: monoIsotopicMass: "182.0314167" xsd:double
 property_value: reactionSites: "2" xsd:nonNegativeInteger
 property_value: spacerLength: "12.0" xsd:float
@@ -3520,6 +3519,7 @@ relationship: has_property XLMOD:00013 ! membrane permeable
 relationship: has_reactive_group XLMOD:00101 ! NHS ester
 relationship: is_cleavable XLMOD:00023 ! cleavable S-S bond
 relationship: is_labelled XLMOD:00010 ! deuterium labelled
+relationship: is_labelled_version_of XLMOD:02029 ! DSP
 
 [Term]
 id: XLMOD:02031
@@ -3744,7 +3744,6 @@ id: XLMOD:02048
 name: DTSSP-d8
 def: "Deuterium labelled 3,3'-Dithiobis[sulfosuccinimidylpropionate]." [PMID:10975572, PMID:18510349]
 property_value: bridgeFormula: "C6 D6 O2 S2" xsd:string
-property_value: doubletDeltaMass: "8.05016" xsd:double
 property_value: monoIsotopicMass: "182.03109" xsd:double
 property_value: reactionSites: "2" xsd:nonNegativeInteger
 property_value: spacerLength: "12.0" xsd:float
@@ -3754,13 +3753,13 @@ relationship: has_reactive_group XLMOD:00102 ! Sulfo NHS ester
 relationship: is_cleavable XLMOD:00023 ! cleavable S-S bond
 relationship: is_cleavable XLMOD:00035 ! CID cleavable
 relationship: is_labelled XLMOD:00010 ! deuterium labelled
+relationship: is_labelled_version_of XLMOD:02033 ! DTSSP
 
 [Term]
 id: XLMOD:02049
 name: EGS-d12
 def: "Deuterium labelled ethylene glycolbis(succinimidylsuccinate)." [PMID:15901824]
 property_value: bridgeFormula: "C10 D10 O6" xsd:string
-property_value: doubletDeltaMass: "12.07573" xsd:double
 property_value: monoIsotopicMass: "238.12347" xsd:double
 property_value: reactionSites: "2" xsd:nonNegativeInteger
 property_value: spacerLength: "16.1" xsd:float
@@ -3770,13 +3769,13 @@ relationship: has_reactive_group XLMOD:00101 ! NHS ester
 relationship: is_cleavable XLMOD:00025 ! hydroxylamine cleavable
 relationship: is_cleavable XLMOD:00039 ! ammonium cleavable
 relationship: is_labelled XLMOD:00010 ! deuterium labelled
+relationship: is_labelled_version_of XLMOD:02034 ! EGS
 
 [Term]
 id: XLMOD:02050
 name: Sulfo-EGS-d12
 def: "Deuterium labelled ethylene glycolbis(sulfosuccinimidylsuccinate)." [PMID:15901824]
 property_value: bridgeFormula: "C10 D10 O6" xsd:string
-property_value: doubletDeltaMass: "12.07573" xsd:double
 property_value: monoIsotopicMass: "238.12347" xsd:double
 property_value: reactionSites: "2" xsd:nonNegativeInteger
 property_value: spacerLength: "16.1" xsd:float
@@ -3786,6 +3785,7 @@ relationship: has_reactive_group XLMOD:00102 ! Sulfo NHS ester
 relationship: is_cleavable XLMOD:00025 ! hydroxylamine cleavable
 relationship: is_cleavable XLMOD:00039 ! ammonium cleavable
 relationship: is_labelled XLMOD:00010 ! deuterium labelled
+relationship: is_labelled_version_of XLMOD:02035 ! Sulfo-EGS
 
 [Term]
 id: XLMOD:02051
@@ -3805,31 +3805,30 @@ name: PCAS-d4
 def: "Pyridine-3-Carboxylic Acid Succinimide." [PMID:20050626, PMID:23085224]
 synonym: "PCASS-d4" EXACT []
 property_value: bridgeFormula: "C6 D3 N1 O1" xsd:string
-property_value: doubletDeltaMass: "4.02508" xsd:double
 property_value: monoIsotopicMass: "109.04812" xsd:double
 property_value: reactionSites: "2" xsd:nonNegativeInteger
 is_a: XLMOD:00005 ! homofunctional cross-linker
 relationship: is_labelled XLMOD:00010 ! deuterium labelled
+relationship: is_labelled_version_of XLMOD:02051 ! PCAS
 
 [Term]
 id: XLMOD:02053
 name: DSA-13C6
 def: "13C labelled disuccinimidyladipic acid." [PSI:XL]
 property_value: bridgeFormula: "13C6 H6 O2" xsd:string
-property_value: doubletDeltaMass: "6.02016" xsd:double
 property_value: monoIsotopicMass: "116.0564" xsd:double
 property_value: reactionSites: "2" xsd:nonNegativeInteger
 is_a: XLMOD:00005 ! homofunctional cross-linker
 relationship: has_property XLMOD:00013 ! membrane permeable
 relationship: has_reactive_group XLMOD:00101 ! NHS ester
 relationship: is_labelled XLMOD:00036 ! 13C labelled
+relationship: is_labelled_version_of XLMOD:02043 ! DSA
 
 [Term]
 id: XLMOD:02054
 name: CBDPS-d8
 def: "Deuterium labelled cyanurbiotindipropionylsuccinimide." [PMID:20622150]
 property_value: bridgeFormula: "C19 D8 H15 N7 O4 S3" xsd:string
-property_value: doubletDeltaMass: "8.05016" xsd:double
 property_value: monoIsotopicMass: "517.14698" xsd:double
 property_value: reactionSites: "2" xsd:nonNegativeInteger
 property_value: spacerLength: "14.0" xsd:float
@@ -3839,6 +3838,7 @@ relationship: has_property XLMOD:00014 ! hydrophilic
 relationship: has_reactive_group XLMOD:00101 ! NHS ester
 relationship: is_cleavable XLMOD:00035 ! CID cleavable
 relationship: is_labelled XLMOD:00010 ! deuterium labelled
+relationship: is_labelled_version_of XLMOD:03001 ! CBDPS
 
 [Term]
 id: XLMOD:02055
@@ -3860,7 +3860,6 @@ id: XLMOD:02056
 name: CBDPSS-d8
 def: "Deuterium labelled cyanurbiotindimercaptopropionylsulfosuccinimide." [PMID:20622150]
 property_value: bridgeFormula: "C19 D8 H15 N7 O4 S3" xsd:string
-property_value: doubletDeltaMass: "8.05016" xsd:double
 property_value: monoIsotopicMass: "517.14698" xsd:double
 property_value: reactionSites: "2" xsd:nonNegativeInteger
 property_value: spacerLength: "14.0" xsd:float
@@ -3870,6 +3869,7 @@ relationship: has_property XLMOD:00014 ! hydrophilic
 relationship: has_reactive_group XLMOD:00102 ! Sulfo NHS ester
 relationship: is_cleavable XLMOD:00035 ! CID cleavable
 relationship: is_labelled XLMOD:00010 ! deuterium labelled
+relationship: is_labelled_version_of XLMOD:02055 ! CBDPSS
 
 [Term]
 id: XLMOD:02057
@@ -3886,12 +3886,12 @@ id: XLMOD:02058
 name: SDH-d12
 def: "Deuterium labelled suberic acid 1,8-dihydrazide." [PMID:24938783]
 property_value: bridgeFormula: "C8 D12 H2 N4" xsd:string
-property_value: doubletDeltaMass: "12.07573" xsd:double
 property_value: monoIsotopicMass: "178.1971667418" xsd:double
 property_value: reactionSites: "2" xsd:nonNegativeInteger
 is_a: XLMOD:00005 ! homofunctional cross-linker
 relationship: has_reactive_group XLMOD:00110 ! hydrazide
 relationship: is_labelled XLMOD:00010 ! deuterium labelled
+relationship: is_labelled_version_of XLMOD:02057 ! SDH
 
 [Term]
 id: XLMOD:02059
@@ -3908,12 +3908,12 @@ id: XLMOD:02060
 name: ADH-d8
 def: "Deuterium labelled adipic acid 1,6-dihydrazide." [PMID:24938783]
 property_value: bridgeFormula: "C6 D8 H2 N4" xsd:string
-property_value: doubletDeltaMass: "8.05016" xsd:double
 property_value: monoIsotopicMass: "146.140760302" xsd:double
 property_value: reactionSites: "2" xsd:nonNegativeInteger
 is_a: XLMOD:00005 ! homofunctional cross-linker
 relationship: has_reactive_group XLMOD:00110 ! hydrazide
 relationship: is_labelled XLMOD:00010 ! deuterium labelled
+relationship: is_labelled_version_of XLMOD:02059 ! ADH
 
 [Term]
 id: XLMOD:02061
@@ -3930,18 +3930,17 @@ id: XLMOD:02062
 name: GDH-d6
 def: "Deuterium labelled glutaric acid 1,5-dihydrazide." [PMID:24938783]
 property_value: bridgeFormula: "C5 D6 H2 N4" xsd:string
-property_value: doubletDeltaMass: "6.04368" xsd:double
 property_value: monoIsotopicMass: "130.112556744" xsd:double
 property_value: reactionSites: "2" xsd:nonNegativeInteger
 is_a: XLMOD:00005 ! homofunctional cross-linker
 relationship: has_reactive_group XLMOD:00110 ! hydrazide
 relationship: is_labelled XLMOD:00010 ! deuterium labelled
+relationship: is_labelled_version_of XLMOD:02061 ! GDH
 
 [Term]
 id: XLMOD:02063
 name: BS3-d12
 def: "Deuterium labelled (bis(sulfosuccinimidyl) 2,2,3,3,4,4,5,5,6,6,7,7-suberate)." [PSI:XL]
-property_value: doubletDeltaMass: "12.07573" xsd:double
 property_value: monoIsotopicMass: "150.14381" xsd:double
 property_value: reactionSites: "2" xsd:nonNegativeInteger
 property_value: spacerLength: "11.4" xsd:float
@@ -3949,13 +3948,13 @@ is_a: XLMOD:00005 ! homofunctional cross-linker
 relationship: has_property XLMOD:00014 ! hydrophilic
 relationship: has_reactive_group XLMOD:00102 ! Sulfo NHS ester
 relationship: is_labelled XLMOD:00010 ! deuterium labelled
+relationship: is_labelled_version_of XLMOD:02000 ! BS3
 
 [Term]
 id: XLMOD:02064
 name: DSG-d6
 def: "Deuterium labelled disuccinimidyl 2,2,3,3,4,4-glutarate." [PSI:XL]
 property_value: bridgeFormula: "C5 D6 O2" xsd:string
-property_value: doubletDeltaMass: "6.02016" xsd:double
 property_value: monoIsotopicMass: "102.05821" xsd:double
 property_value: reactionSites: "2" xsd:nonNegativeInteger
 property_value: spacerLength: "7.7" xsd:float
@@ -3963,6 +3962,7 @@ is_a: XLMOD:00005 ! homofunctional cross-linker
 relationship: has_property XLMOD:00013 ! membrane permeable
 relationship: has_reactive_group XLMOD:00101 ! NHS ester
 relationship: is_labelled XLMOD:00010 ! deuterium labelled
+relationship: is_labelled_version_of XLMOD:02006 ! DSG
 
 [Term]
 id: XLMOD:02065
@@ -3970,7 +3970,6 @@ name: BS2G-d6
 def: "Deuterium labelled bis(sulfosuccinimidyl) 2,2,3,3,4,4-glutarate." [PSI:XL]
 synonym: "DSSG-d6" EXACT []
 property_value: bridgeFormula: "C5 D4 O2" xsd:string
-property_value: doubletDeltaMass: "4.02508" xsd:double
 property_value: monoIsotopicMass: "100.046236376" xsd:double
 property_value: reactionSites: "2" xsd:nonNegativeInteger
 property_value: spacerLength: "7.7" xsd:float
@@ -3978,6 +3977,7 @@ is_a: XLMOD:00005 ! homofunctional cross-linker
 relationship: has_property XLMOD:00014 ! hydrophilic
 relationship: has_reactive_group XLMOD:00102 ! Sulfo NHS ester
 relationship: is_labelled XLMOD:00010 ! deuterium labelled
+relationship: is_labelled_version_of XLMOD:02005 ! BS2G
 
 [Term]
 id: XLMOD:02066
@@ -4469,13 +4469,13 @@ id: XLMOD:02110
 name: SBDC
 def: "Deuterium labelled N-succinimidyl p-benzoyldihydrocinnamate." [PMID:19653199]
 synonym: "SBC-d2" EXACT []
-property_value: doubletDeltaMass: "2.01254" xsd:double
 property_value: monoIsotopicMass: "238.10" xsd:double
 property_value: reactionSites: "2" xsd:nonNegativeInteger
 is_a: XLMOD:00006 ! heterofunctional cross-linker
 relationship: has_reactive_group XLMOD:00101 ! NHS ester
 relationship: has_reactive_group XLMOD:00119 ! benzophenone
 relationship: is_labelled XLMOD:00010 ! deuterium labelled
+relationship: is_labelled_version_of XLMOD:02109 ! SBC
 
 [Term]
 id: XLMOD:02111
