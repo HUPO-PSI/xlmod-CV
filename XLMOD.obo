@@ -95,6 +95,11 @@ id: has_reactive_group
 name: has_reactive_group
 def: "Indicates that the cross-linking or derivatization reagent has the specified reactive group." [OBO:defs]
 
+[Typedef]
+id: is_labelled_version_of
+name: is_labelled_version_of
+def: "Indicates that the cross-linking reagent is a labelled version of the indicated reagent." [OBO:defs]
+
 [Term]
 id: XLMOD:00000
 name: Proteomics Standards Initiative cross-linking and derivatization controlled vocabulary
@@ -2330,12 +2335,12 @@ id: XLMOD:01095
 name: hydrolyzed PDH-d10
 def: "Deuterium labelled hydrolyzed pimelic acid dihydrazide." [PSI:XL]
 property_value: bridgeFormula: "C7 D10 H2 N4" xsd:string
-property_value: doubletDeltaMass: "10.06276744" xsd:double
 property_value: monoIsotopicMass: "180.17952856" xsd:double
 is_a: XLMOD:00096 ! hydrolization cross-linker related chemical modification
 relationship: is_partially_reacted XLMOD:00011 ! hydrolyzed
 relationship: is_side_product_of XLMOD:02224 ! PDH-d10
 relationship: is_labelled XLMOD:00010 ! deuterium labelled
+relationship: is_labelled_version_of XLMOD:01094 ! hydrolyzed PDH
 
 [Term]
 id: XLMOD:01096
