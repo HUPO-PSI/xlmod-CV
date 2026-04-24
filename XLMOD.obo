@@ -4591,7 +4591,6 @@ synonym: "Disuccinimidyl dibutyric urea" EXACT []
 synonym: "DSBU" EXACT []
 property_value: bridgeFormula: "C9 H12 N2 O3" xsd:string
 property_value: monoIsotopicMass: "196.084792" xsd:double
-property_value: doubletDeltaMass: "25.979" xsd:double
 property_value: reactionSites: "2" xsd:nonNegativeInteger
 property_value: spacerLength: "12.5" xsd:float
 property_value: stubDefinition "CID =  : C9 H12 N2 O3" xsd:string
@@ -5608,12 +5607,12 @@ id: XLMOD:02210
 name: PDH-d10
 def: "Deuterium labelled pimelic acid dihydrazide." [PSI:XL]
 property_value: bridgeFormula: "C7 D10 H2 N4" xsd:string
-property_value: doubletDeltaMass: "10.06276744" xsd:double
 property_value: monoIsotopicMass: "162.16896386" xsd:double
 property_value: reactionSites: "2" xsd:nonNegativeInteger
 is_a: XLMOD:00005 ! homofunctional cross-linker
 relationship: has_reactive_group XLMOD:00110 ! hydrazide
 relationship: is_labelled XLMOD:00010 ! deuterium labelled
+relationship: is_labelled_version_of XLMOD:02209 ! PDH
 
 [Term]
 id: XLMOD:02211
@@ -5629,13 +5628,13 @@ relationship: has_reactive_group XLMOD:00055 ! azide
 id: XLMOD:02212
 name: ABAS-13C6
 def: "13C labelled azidobenzoic acid succinimide." [PMID:25192908]
-property_value: doubletDeltaMass: "6.02016" xsd:double
 property_value: reactionSites: "2" xsd:nonNegativeInteger
 property_value: spacerLength: "7.0" xsd:float
 is_a: XLMOD:00006 ! heterofunctional cross-linker
 relationship: has_reactive_group XLMOD:00101 ! NHS ester
 relationship: has_reactive_group XLMOD:00055 ! azide
 relationship: is_labelled XLMOD:00036 ! 13C labelled
+relationship: is_labelled_version_of XLMOD:02211 ! ABAS
 
 [Term]
 id: XLMOD:02213
@@ -5651,20 +5650,19 @@ relationship: has_reactive_group XLMOD:00119 ! benzophenone
 id: XLMOD:02214
 name: CBS-13C6
 def: "13C labelled carboxy-benzophenone-succinimide." [PMID:25192908]
-property_value: doubletDeltaMass: "6.02016" xsd:double
 property_value: reactionSites: "2" xsd:nonNegativeInteger
 property_value: spacerLength: "7.0" xsd:float
 is_a: XLMOD:00006 ! heterofunctional cross-linker
 relationship: has_reactive_group XLMOD:00101 ! NHS ester
 relationship: has_reactive_group XLMOD:00119 ! benzophenone
 relationship: is_labelled XLMOD:00036 ! 13C labelled
+relationship: is_labelled_version_of XLMOD:02213 ! CBS
 
 [Term]
 id: XLMOD:02215
 name: SDA-13C5
 def: "13C labelled succinimidyl-ester diazirine." [PMID:25192908]
 property_value: bridgeFormula: "13C5 H6 O1" xsd:string
-property_value: doubletDeltaMass: "5.0168" xsd:double
 property_value: monoIsotopicMass: "87.05866484" xsd:double
 property_value: reactionSites: "2" xsd:nonNegativeInteger
 property_value: spacerLength: "5.0" xsd:float
@@ -5672,6 +5670,7 @@ is_a: XLMOD:00006 ! heterofunctional cross-linker
 relationship: has_reactive_group XLMOD:00101 ! NHS ester
 relationship: has_reactive_group XLMOD:00103 ! diazirine
 relationship: is_labelled XLMOD:00036 ! 13C labelled
+relationship: is_labelled_version_of XLMOD:02134 ! SDA
 
 [Term]
 id: XLMOD:02216
@@ -5687,12 +5686,12 @@ relationship: is_cleavable XLMOD:00067 ! CID cleavable C-S bond
 id: XLMOD:02217
 name: DMDSSO-d10
 def: "Deuterium labelled dimethyl disuccinimidyl sulfoxide." [PMID:24471733]
-property_value: doubletDeltaMass: "10.06276744" xsd:double
 property_value: reactionSites: "2" xsd:nonNegativeInteger
 is_a: XLMOD:00006 ! heterofunctional cross-linker
 relationship: has_reactive_group XLMOD:00101 ! NHS ester
 relationship: is_labelled XLMOD:00010 ! deuterium labelled
 relationship: is_cleavable XLMOD:00067 ! CID cleavable C-S bond
+relationship: is_labelled_version_of XLMOD:02216 ! DMDSSO
 
 [Term]
 id: XLMOD:02218
@@ -6286,13 +6285,13 @@ relationship: has_reactive_group XLMOD:00055 ! azide
 id: XLMOD:03011
 name: TATA-13C6
 def: "13C labelled 2,4,6-triazido-1,3,5-triazine." [PMID:26931439]
-property_value: doubletDeltaMass: "6.02016" xsd:double
 property_value: monoIsotopicMass: "206.07016" xsd:double
 property_value: reactionSites: "3" xsd:nonNegativeInteger
 property_value: spacerLength: "5.0" xsd:float
 is_a: XLMOD:00005 ! homofunctional cross-linker
 relationship: has_reactive_group XLMOD:00055 ! azide
 relationship: is_labelled XLMOD:00036 ! 13C labelled
+relationship: is_labelled_version_of XLMOD:03010 ! TATA
 
 [Term]
 id: XLMOD:03012
