@@ -10,9 +10,9 @@
      xmlns:xlmod="http://purl.obolibrary.org/obo/xlmod#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/xlmod.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/xlmod/1.5.3/xlmod.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/xlmod/1.5.4/xlmod.owl"/>
         <oboInOwl:auto-generated-by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBO-Edit 2.3.1</oboInOwl:auto-generated-by>
-        <oboInOwl:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">27:03:2026 16:02</oboInOwl:date>
+        <oboInOwl:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">29:04:2026 10:29</oboInOwl:date>
         <oboInOwl:default-namespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XLMOD</oboInOwl:default-namespace>
         <oboInOwl:hasOBOFormatVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.2</oboInOwl:hasOBOFormatVersion>
         <oboInOwl:saved-by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Douwe Schulte</oboInOwl:saved-by>
@@ -68,12 +68,6 @@
     <!-- http://purl.obolibrary.org/obo/deadEndFormula_ -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/deadEndFormula_"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/doubletDeltaMass_ -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/doubletDeltaMass_"/>
     
 
 
@@ -459,6 +453,23 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/xlmod#is_labelled"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Indicates that the cross-linking or derivatization reagent has an isotopic label.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBO:defs</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/xlmod#is_labelled_version_of -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/xlmod#is_labelled_version_of">
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Indicates that the cross-linking reagent is a labelled version of the indicated reagent.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XLMOD</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is_labelled_version_of</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is_labelled_version_of</rdfs:label>
+    </owl:ObjectProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/xlmod#is_labelled_version_of"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Indicates that the cross-linking reagent is a labelled version of the indicated reagent.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBO:defs</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -7851,6 +7862,12 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/xlmod#is_labelled_version_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XLMOD_01094"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/xlmod#is_partially_reacted"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XLMOD_00011"/>
             </owl:Restriction>
@@ -7863,7 +7880,6 @@
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deuterium labelled hydrolyzed pimelic acid dihydrazide.</obo:IAO_0000115>
         <obo:bridgeFormula_ rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C7 D10 H2 N4</obo:bridgeFormula_>
-        <obo:doubletDeltaMass_ rdf:datatype="http://www.w3.org/2001/XMLSchema#double">10.06276744</obo:doubletDeltaMass_>
         <obo:monoIsotopicMass_ rdf:datatype="http://www.w3.org/2001/XMLSchema#double">180.17952856</obo:monoIsotopicMass_>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XLMOD</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XLMOD:01095</oboInOwl:id>
@@ -10471,9 +10487,14 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XLMOD_00010"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/xlmod#is_labelled_version_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XLMOD_02001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deuterium labelled disuccinimidyl 2,2,7,7-suberate.</obo:IAO_0000115>
         <obo:bridgeFormula_ rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C8 D4 H6 O2</obo:bridgeFormula_>
-        <obo:doubletDeltaMass_ rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.02508</obo:doubletDeltaMass_>
         <obo:monoIsotopicMass_ rdf:datatype="http://www.w3.org/2001/XMLSchema#double">142.093186586</obo:monoIsotopicMass_>
         <obo:reactionSites_ rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</obo:reactionSites_>
         <obo:spacerLength_ rdf:datatype="http://www.w3.org/2001/XMLSchema#float">11.4</obo:spacerLength_>
@@ -10507,9 +10528,14 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XLMOD_00010"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/xlmod#is_labelled_version_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XLMOD_02001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deuterium labelled disuccinimidyl 2,2,3,3,4,4,5,5,6,6,7,7-suberate.</obo:IAO_0000115>
         <obo:bridgeFormula_ rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C8 D10 O2</obo:bridgeFormula_>
-        <obo:doubletDeltaMass_ rdf:datatype="http://www.w3.org/2001/XMLSchema#double">12.07573</obo:doubletDeltaMass_>
         <obo:monoIsotopicMass_ rdf:datatype="http://www.w3.org/2001/XMLSchema#double">150.143400538</obo:monoIsotopicMass_>
         <obo:reactionSites_ rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</obo:reactionSites_>
         <obo:spacerLength_ rdf:datatype="http://www.w3.org/2001/XMLSchema#float">11.4</obo:spacerLength_>
@@ -10544,8 +10570,13 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XLMOD_00010"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/xlmod#is_labelled_version_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XLMOD_02000"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deuterium labelled (bis(sulfosuccinimidyl) 2,2,7,7-suberate).</obo:IAO_0000115>
-        <obo:doubletDeltaMass_ rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.02508</obo:doubletDeltaMass_>
         <obo:monoIsotopicMass_ rdf:datatype="http://www.w3.org/2001/XMLSchema#double">142.093186586</obo:monoIsotopicMass_>
         <obo:reactionSites_ rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</obo:reactionSites_>
         <obo:spacerLength_ rdf:datatype="http://www.w3.org/2001/XMLSchema#float">11.4</obo:spacerLength_>
@@ -10663,9 +10694,14 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XLMOD_00010"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/xlmod#is_labelled_version_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XLMOD_02006"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deuterium labelled disuccinimidyl 2,2,4,4-glutarate.</obo:IAO_0000115>
         <obo:bridgeFormula_ rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C5 D4 O2</obo:bridgeFormula_>
-        <obo:doubletDeltaMass_ rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.02508</obo:doubletDeltaMass_>
         <obo:monoIsotopicMass_ rdf:datatype="http://www.w3.org/2001/XMLSchema#double">100.046236376</obo:monoIsotopicMass_>
         <obo:reactionSites_ rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</obo:reactionSites_>
         <obo:spacerLength_ rdf:datatype="http://www.w3.org/2001/XMLSchema#float">7.7</obo:spacerLength_>
@@ -10698,9 +10734,14 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XLMOD_00010"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/xlmod#is_labelled_version_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XLMOD_02005"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deuterium labelled bis(sulfosuccinimidyl) 2,2,4,4-glutarate.</obo:IAO_0000115>
         <obo:bridgeFormula_ rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C5 D4 O2</obo:bridgeFormula_>
-        <obo:doubletDeltaMass_ rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.02508</obo:doubletDeltaMass_>
         <obo:monoIsotopicMass_ rdf:datatype="http://www.w3.org/2001/XMLSchema#double">100.046236376</obo:monoIsotopicMass_>
         <obo:reactionSites_ rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</obo:reactionSites_>
         <obo:spacerLength_ rdf:datatype="http://www.w3.org/2001/XMLSchema#float">7.7</obo:spacerLength_>
@@ -11645,9 +11686,14 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XLMOD_00010"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/xlmod#is_labelled_version_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XLMOD_02029"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deuterium labelled Dithiobis[1,1,2,2,2,2,3,3-succinimidyl propionate.</obo:IAO_0000115>
         <obo:bridgeFormula_ rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C6 D6 O2 S2</obo:bridgeFormula_>
-        <obo:doubletDeltaMass_ rdf:datatype="http://www.w3.org/2001/XMLSchema#double">8.05016</obo:doubletDeltaMass_>
         <obo:monoIsotopicMass_ rdf:datatype="http://www.w3.org/2001/XMLSchema#double">182.0314167</obo:monoIsotopicMass_>
         <obo:reactionSites_ rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</obo:reactionSites_>
         <obo:spacerLength_ rdf:datatype="http://www.w3.org/2001/XMLSchema#float">12.0</obo:spacerLength_>
@@ -12362,9 +12408,14 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XLMOD_00010"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/xlmod#is_labelled_version_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XLMOD_02033"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deuterium labelled 3,3&apos;-Dithiobis[sulfosuccinimidylpropionate].</obo:IAO_0000115>
         <obo:bridgeFormula_ rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C6 D6 O2 S2</obo:bridgeFormula_>
-        <obo:doubletDeltaMass_ rdf:datatype="http://www.w3.org/2001/XMLSchema#double">8.05016</obo:doubletDeltaMass_>
         <obo:monoIsotopicMass_ rdf:datatype="http://www.w3.org/2001/XMLSchema#double">182.03109</obo:monoIsotopicMass_>
         <obo:reactionSites_ rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</obo:reactionSites_>
         <obo:spacerLength_ rdf:datatype="http://www.w3.org/2001/XMLSchema#float">12.0</obo:spacerLength_>
@@ -12416,9 +12467,14 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XLMOD_00010"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/xlmod#is_labelled_version_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XLMOD_02034"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deuterium labelled ethylene glycolbis(succinimidylsuccinate).</obo:IAO_0000115>
         <obo:bridgeFormula_ rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C10 D10 O6</obo:bridgeFormula_>
-        <obo:doubletDeltaMass_ rdf:datatype="http://www.w3.org/2001/XMLSchema#double">12.07573</obo:doubletDeltaMass_>
         <obo:monoIsotopicMass_ rdf:datatype="http://www.w3.org/2001/XMLSchema#double">238.12347</obo:monoIsotopicMass_>
         <obo:reactionSites_ rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</obo:reactionSites_>
         <obo:spacerLength_ rdf:datatype="http://www.w3.org/2001/XMLSchema#float">16.1</obo:spacerLength_>
@@ -12469,9 +12525,14 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XLMOD_00010"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/xlmod#is_labelled_version_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XLMOD_02035"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deuterium labelled ethylene glycolbis(sulfosuccinimidylsuccinate).</obo:IAO_0000115>
         <obo:bridgeFormula_ rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C10 D10 O6</obo:bridgeFormula_>
-        <obo:doubletDeltaMass_ rdf:datatype="http://www.w3.org/2001/XMLSchema#double">12.07573</obo:doubletDeltaMass_>
         <obo:monoIsotopicMass_ rdf:datatype="http://www.w3.org/2001/XMLSchema#double">238.12347</obo:monoIsotopicMass_>
         <obo:reactionSites_ rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</obo:reactionSites_>
         <obo:spacerLength_ rdf:datatype="http://www.w3.org/2001/XMLSchema#float">16.1</obo:spacerLength_>
@@ -12491,14 +12552,26 @@
     <!-- http://purl.obolibrary.org/obo/XLMOD_02051 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/XLMOD_02051">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XLMOD_00005"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/xlmod#is_reactive_with"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XLMOD_00028"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/xlmod#is_reactive_with"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XLMOD_06503"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pyridine-3-Carboxylic Acid Succinimide.</obo:IAO_0000115>
-        <obo:bridgeFormula_ rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C6 H3 N1 O1</obo:bridgeFormula_>
-        <obo:monoIsotopicMass_ rdf:datatype="http://www.w3.org/2001/XMLSchema#double">105.02146</obo:monoIsotopicMass_>
-        <obo:reactionSites_ rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</obo:reactionSites_>
+        <obo:deadEndFormula_ rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C6 H4 N1 O1</obo:deadEndFormula_>
+        <obo:monoIsotopicMass_ rdf:datatype="http://www.w3.org/2001/XMLSchema#double">106.029289</obo:monoIsotopicMass_>
+        <obo:reactionSites_ rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</obo:reactionSites_>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PCAS-H4</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PCAS-d0</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PCASS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PyridineCarboxylicAcidSuccinimide</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XLMOD</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XLMOD:02051</oboInOwl:id>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PCAS</rdfs:label>
@@ -12516,18 +12589,34 @@
     <!-- http://purl.obolibrary.org/obo/XLMOD_02052 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/XLMOD_02052">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XLMOD_00005"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/xlmod#is_labelled"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XLMOD_00010"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/xlmod#is_labelled_version_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XLMOD_02051"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/xlmod#is_reactive_with"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XLMOD_00028"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/xlmod#is_reactive_with"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XLMOD_06503"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pyridine-3-Carboxylic Acid Succinimide.</obo:IAO_0000115>
-        <obo:bridgeFormula_ rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C6 D3 N1 O1</obo:bridgeFormula_>
-        <obo:doubletDeltaMass_ rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.02508</obo:doubletDeltaMass_>
-        <obo:monoIsotopicMass_ rdf:datatype="http://www.w3.org/2001/XMLSchema#double">109.04812</obo:monoIsotopicMass_>
-        <obo:reactionSites_ rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</obo:reactionSites_>
+        <obo:deadEndFormula_ rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C6 D4 N1 O1</obo:deadEndFormula_>
+        <obo:monoIsotopicMass_ rdf:datatype="http://www.w3.org/2001/XMLSchema#double">110.05434</obo:monoIsotopicMass_>
+        <obo:reactionSites_ rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</obo:reactionSites_>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PCASS-d4</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XLMOD</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XLMOD:02052</oboInOwl:id>
@@ -12565,9 +12654,14 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XLMOD_00036"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/xlmod#is_labelled_version_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XLMOD_02043"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">13C labelled disuccinimidyladipic acid.</obo:IAO_0000115>
         <obo:bridgeFormula_ rdf:datatype="http://www.w3.org/2001/XMLSchema#string">13C6 H6 O2</obo:bridgeFormula_>
-        <obo:doubletDeltaMass_ rdf:datatype="http://www.w3.org/2001/XMLSchema#double">6.02016</obo:doubletDeltaMass_>
         <obo:monoIsotopicMass_ rdf:datatype="http://www.w3.org/2001/XMLSchema#double">116.0564</obo:monoIsotopicMass_>
         <obo:reactionSites_ rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</obo:reactionSites_>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XLMOD</oboInOwl:hasOBONamespace>
@@ -12617,9 +12711,14 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XLMOD_00010"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/xlmod#is_labelled_version_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XLMOD_03001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deuterium labelled cyanurbiotindipropionylsuccinimide.</obo:IAO_0000115>
         <obo:bridgeFormula_ rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C19 D8 H15 N7 O4 S3</obo:bridgeFormula_>
-        <obo:doubletDeltaMass_ rdf:datatype="http://www.w3.org/2001/XMLSchema#double">8.05016</obo:doubletDeltaMass_>
         <obo:monoIsotopicMass_ rdf:datatype="http://www.w3.org/2001/XMLSchema#double">517.14698</obo:monoIsotopicMass_>
         <obo:reactionSites_ rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</obo:reactionSites_>
         <obo:spacerLength_ rdf:datatype="http://www.w3.org/2001/XMLSchema#float">14.0</obo:spacerLength_>
@@ -12717,9 +12816,14 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XLMOD_00010"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/xlmod#is_labelled_version_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XLMOD_02055"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deuterium labelled cyanurbiotindimercaptopropionylsulfosuccinimide.</obo:IAO_0000115>
         <obo:bridgeFormula_ rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C19 D8 H15 N7 O4 S3</obo:bridgeFormula_>
-        <obo:doubletDeltaMass_ rdf:datatype="http://www.w3.org/2001/XMLSchema#double">8.05016</obo:doubletDeltaMass_>
         <obo:monoIsotopicMass_ rdf:datatype="http://www.w3.org/2001/XMLSchema#double">517.14698</obo:monoIsotopicMass_>
         <obo:reactionSites_ rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</obo:reactionSites_>
         <obo:spacerLength_ rdf:datatype="http://www.w3.org/2001/XMLSchema#float">14.0</obo:spacerLength_>
@@ -12782,9 +12886,14 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XLMOD_00010"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/xlmod#is_labelled_version_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XLMOD_02057"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deuterium labelled suberic acid 1,8-dihydrazide.</obo:IAO_0000115>
         <obo:bridgeFormula_ rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C8 D12 H2 N4</obo:bridgeFormula_>
-        <obo:doubletDeltaMass_ rdf:datatype="http://www.w3.org/2001/XMLSchema#double">12.07573</obo:doubletDeltaMass_>
         <obo:monoIsotopicMass_ rdf:datatype="http://www.w3.org/2001/XMLSchema#double">178.1971667418</obo:monoIsotopicMass_>
         <obo:reactionSites_ rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</obo:reactionSites_>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XLMOD</oboInOwl:hasOBONamespace>
@@ -12846,9 +12955,14 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XLMOD_00010"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/xlmod#is_labelled_version_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XLMOD_02059"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deuterium labelled adipic acid 1,6-dihydrazide.</obo:IAO_0000115>
         <obo:bridgeFormula_ rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C6 D8 H2 N4</obo:bridgeFormula_>
-        <obo:doubletDeltaMass_ rdf:datatype="http://www.w3.org/2001/XMLSchema#double">8.05016</obo:doubletDeltaMass_>
         <obo:monoIsotopicMass_ rdf:datatype="http://www.w3.org/2001/XMLSchema#double">146.140760302</obo:monoIsotopicMass_>
         <obo:reactionSites_ rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</obo:reactionSites_>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XLMOD</oboInOwl:hasOBONamespace>
@@ -12910,9 +13024,14 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XLMOD_00010"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/xlmod#is_labelled_version_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XLMOD_02061"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deuterium labelled glutaric acid 1,5-dihydrazide.</obo:IAO_0000115>
         <obo:bridgeFormula_ rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C5 D6 H2 N4</obo:bridgeFormula_>
-        <obo:doubletDeltaMass_ rdf:datatype="http://www.w3.org/2001/XMLSchema#double">6.04368</obo:doubletDeltaMass_>
         <obo:monoIsotopicMass_ rdf:datatype="http://www.w3.org/2001/XMLSchema#double">130.112556744</obo:monoIsotopicMass_>
         <obo:reactionSites_ rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</obo:reactionSites_>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XLMOD</oboInOwl:hasOBONamespace>
@@ -12950,8 +13069,13 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XLMOD_00010"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/xlmod#is_labelled_version_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XLMOD_02000"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deuterium labelled (bis(sulfosuccinimidyl) 2,2,3,3,4,4,5,5,6,6,7,7-suberate).</obo:IAO_0000115>
-        <obo:doubletDeltaMass_ rdf:datatype="http://www.w3.org/2001/XMLSchema#double">12.07573</obo:doubletDeltaMass_>
         <obo:monoIsotopicMass_ rdf:datatype="http://www.w3.org/2001/XMLSchema#double">150.14381</obo:monoIsotopicMass_>
         <obo:reactionSites_ rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</obo:reactionSites_>
         <obo:spacerLength_ rdf:datatype="http://www.w3.org/2001/XMLSchema#float">11.4</obo:spacerLength_>
@@ -12990,9 +13114,14 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XLMOD_00010"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/xlmod#is_labelled_version_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XLMOD_02006"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deuterium labelled disuccinimidyl 2,2,3,3,4,4-glutarate.</obo:IAO_0000115>
         <obo:bridgeFormula_ rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C5 D6 O2</obo:bridgeFormula_>
-        <obo:doubletDeltaMass_ rdf:datatype="http://www.w3.org/2001/XMLSchema#double">6.02016</obo:doubletDeltaMass_>
         <obo:monoIsotopicMass_ rdf:datatype="http://www.w3.org/2001/XMLSchema#double">102.05821</obo:monoIsotopicMass_>
         <obo:reactionSites_ rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</obo:reactionSites_>
         <obo:spacerLength_ rdf:datatype="http://www.w3.org/2001/XMLSchema#float">7.7</obo:spacerLength_>
@@ -13031,9 +13160,14 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XLMOD_00010"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/xlmod#is_labelled_version_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XLMOD_02005"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deuterium labelled bis(sulfosuccinimidyl) 2,2,3,3,4,4-glutarate.</obo:IAO_0000115>
         <obo:bridgeFormula_ rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C5 D4 O2</obo:bridgeFormula_>
-        <obo:doubletDeltaMass_ rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.02508</obo:doubletDeltaMass_>
         <obo:monoIsotopicMass_ rdf:datatype="http://www.w3.org/2001/XMLSchema#double">100.046236376</obo:monoIsotopicMass_>
         <obo:reactionSites_ rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</obo:reactionSites_>
         <obo:spacerLength_ rdf:datatype="http://www.w3.org/2001/XMLSchema#float">7.7</obo:spacerLength_>
@@ -14743,8 +14877,13 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XLMOD_00010"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/xlmod#is_labelled_version_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XLMOD_02109"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deuterium labelled N-succinimidyl p-benzoyldihydrocinnamate.</obo:IAO_0000115>
-        <obo:doubletDeltaMass_ rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.01254</obo:doubletDeltaMass_>
         <obo:monoIsotopicMass_ rdf:datatype="http://www.w3.org/2001/XMLSchema#double">238.1</obo:monoIsotopicMass_>
         <obo:reactionSites_ rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</obo:reactionSites_>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SBC-d2</oboInOwl:hasExactSynonym>
@@ -15091,7 +15230,6 @@
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NHS-amino butyric acid-urea-amino butyric acid-NHS.</obo:IAO_0000115>
         <obo:bridgeFormula_ rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C9 H12 N2 O3</obo:bridgeFormula_>
-        <obo:doubletDeltaMass_ rdf:datatype="http://www.w3.org/2001/XMLSchema#double">25.979</obo:doubletDeltaMass_>
         <obo:monoIsotopicMass_ rdf:datatype="http://www.w3.org/2001/XMLSchema#double">196.084792</obo:monoIsotopicMass_>
         <obo:neutralLossFormula_ rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-H2 -O1</obo:neutralLossFormula_>
         <obo:neutralLossFormula_ rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-H3 -N1</obo:neutralLossFormula_>
@@ -18438,9 +18576,14 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XLMOD_00010"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/xlmod#is_labelled_version_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XLMOD_02209"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deuterium labelled pimelic acid dihydrazide.</obo:IAO_0000115>
         <obo:bridgeFormula_ rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C7 D10 H2 N4</obo:bridgeFormula_>
-        <obo:doubletDeltaMass_ rdf:datatype="http://www.w3.org/2001/XMLSchema#double">10.06276744</obo:doubletDeltaMass_>
         <obo:monoIsotopicMass_ rdf:datatype="http://www.w3.org/2001/XMLSchema#double">162.16896386</obo:monoIsotopicMass_>
         <obo:reactionSites_ rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</obo:reactionSites_>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XLMOD</oboInOwl:hasOBONamespace>
@@ -18514,8 +18657,13 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XLMOD_00036"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/xlmod#is_labelled_version_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XLMOD_02211"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">13C labelled azidobenzoic acid succinimide.</obo:IAO_0000115>
-        <obo:doubletDeltaMass_ rdf:datatype="http://www.w3.org/2001/XMLSchema#double">6.02016</obo:doubletDeltaMass_>
         <obo:reactionSites_ rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</obo:reactionSites_>
         <obo:spacerLength_ rdf:datatype="http://www.w3.org/2001/XMLSchema#float">7.0</obo:spacerLength_>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XLMOD</oboInOwl:hasOBONamespace>
@@ -18585,8 +18733,13 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XLMOD_00036"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/xlmod#is_labelled_version_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XLMOD_02213"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">13C labelled carboxy-benzophenone-succinimide.</obo:IAO_0000115>
-        <obo:doubletDeltaMass_ rdf:datatype="http://www.w3.org/2001/XMLSchema#double">6.02016</obo:doubletDeltaMass_>
         <obo:reactionSites_ rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</obo:reactionSites_>
         <obo:spacerLength_ rdf:datatype="http://www.w3.org/2001/XMLSchema#float">7.0</obo:spacerLength_>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XLMOD</oboInOwl:hasOBONamespace>
@@ -18624,9 +18777,14 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XLMOD_00036"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/xlmod#is_labelled_version_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XLMOD_02134"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">13C labelled succinimidyl-ester diazirine.</obo:IAO_0000115>
         <obo:bridgeFormula_ rdf:datatype="http://www.w3.org/2001/XMLSchema#string">13C5 H6 O1</obo:bridgeFormula_>
-        <obo:doubletDeltaMass_ rdf:datatype="http://www.w3.org/2001/XMLSchema#double">5.0168</obo:doubletDeltaMass_>
         <obo:monoIsotopicMass_ rdf:datatype="http://www.w3.org/2001/XMLSchema#double">87.05866484</obo:monoIsotopicMass_>
         <obo:reactionSites_ rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</obo:reactionSites_>
         <obo:spacerLength_ rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</obo:spacerLength_>
@@ -18698,8 +18856,13 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XLMOD_00010"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/xlmod#is_labelled_version_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XLMOD_02216"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deuterium labelled dimethyl disuccinimidyl sulfoxide.</obo:IAO_0000115>
-        <obo:doubletDeltaMass_ rdf:datatype="http://www.w3.org/2001/XMLSchema#double">10.06276744</obo:doubletDeltaMass_>
         <obo:reactionSites_ rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</obo:reactionSites_>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XLMOD</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XLMOD:02217</oboInOwl:id>
@@ -20680,8 +20843,13 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XLMOD_00036"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/xlmod#is_labelled_version_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XLMOD_03010"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">13C labelled 2,4,6-triazido-1,3,5-triazine.</obo:IAO_0000115>
-        <obo:doubletDeltaMass_ rdf:datatype="http://www.w3.org/2001/XMLSchema#double">6.02016</obo:doubletDeltaMass_>
         <obo:monoIsotopicMass_ rdf:datatype="http://www.w3.org/2001/XMLSchema#double">206.07016</obo:monoIsotopicMass_>
         <obo:reactionSites_ rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</obo:reactionSites_>
         <obo:spacerLength_ rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</obo:spacerLength_>
