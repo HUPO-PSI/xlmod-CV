@@ -3113,7 +3113,6 @@ property_value: bridgeFormula: "C8 H10 O2" xsd:string
 property_value: monoIsotopicMass: "138.06807961" xsd:double
 property_value: reactionSites: "2" xsd:nonNegativeInteger
 property_value: spacerLength: "11.4" xsd:float
-property_value: specificities "(K)" xsd:string
 is_a: XLMOD:00005 ! homofunctional cross-linker
 relationship: has_reactive_group XLMOD:00101 ! NHS ester
 
@@ -6160,7 +6159,6 @@ property_value: reactionSites: "2" xsd:nonNegativeInteger
 property_value: minSpacerLength "5.0" xsd:float
 property_value: maxSpacerLength "20.0" xsd:float
 property_value: neutralLossFormula "-H2 -O1" xsd:string
-property_value: specificities "(K)" xsd:string
 is_a: XLMOD:00005 ! homofunctional cross-linker
 relationship: has_handle XLMOD:00173 ! phosphonic acid
 relationship: has_reactive_group XLMOD:00101 ! NHS ester
