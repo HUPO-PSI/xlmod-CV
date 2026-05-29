@@ -1,7 +1,7 @@
 format-version: 1.2
-data-version: 1.5.4
+data-version: 1.5.5
 ontology: xlmod
-date: 29:04:2026 10:29
+date: 29:05:2026 17:30
 saved-by: Douwe Schulte
 auto-generated-by: OBO-Edit 2.3.1
 default-namespace: XLMOD
@@ -10378,3 +10378,15 @@ is_a: XLMOD:00008 ! zero-length cross-linker
 relationship: is_labelled XLMOD:09318 ! enzymatic generated
 relationship: is_labelled XLMOD:09319 ! transglutaminase generated
 relationship: is_reactive_with XLMOD:00028 ! primary amine reactive
+
+[Term]
+id: XLMOD:09321
+name: TSTO
+def: "Tris-succinimidyl trioxane." [PMID:40593561]
+property_value: bridgeFormula: "C15 H18 O6" xsd:string
+property_value: stubDefinition: "CID = C5 H6 O2, -H2 -O1 : C5 H6 O2, -H2 -O1 : C5 H6 O2, -H2 -O1" xsd:string
+property_value: reactionSites: "3" xsd:nonNegativeInteger
+property_value: spacerLength: "21.1" xsd:float
+property_value: maxSpacerLength: "35" xsd:float
+is_a: XLMOD:00005 ! homofunctional cross-linker
+relationship: has_reactive_group XLMOD:00101 ! NHS ester
