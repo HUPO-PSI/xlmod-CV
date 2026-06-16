@@ -1,7 +1,7 @@
 format-version: 1.2
 data-version: 1.5.4
 ontology: xlmod
-date: 29:04:2026 10:29
+date: 16:06:2026 11:25
 saved-by: Douwe Schulte
 auto-generated-by: OBO-Edit 2.3.1
 default-namespace: XLMOD
@@ -1128,7 +1128,7 @@ relationship: is_reactive_with XLMOD:00037 ! non-selective
 id: XLMOD:00146
 name: dimethylether
 def: "A dimethylether (Ch3-O-CH3) reactive group that reacts with carboxyl groups." [PSI:XL]
-property_value: specificities: "(D,E)" xsd:string
+property_value: specificities: "(D,E,Protein C-term)" xsd:string
 is_a: XLMOD:00100 ! reactive group
 relationship: is_reactive_with XLMOD:00030 ! carboxyl reactive
 
@@ -5593,7 +5593,7 @@ def: "4-(4,6-Dimethoxy-1,3,5-triazin-2-yl)-4-methylmorpholinium chloride." [CAS:
 property_value: reactionSites: "2" xsd:nonNegativeInteger
 property_value: bridgeFormula: "-H2 -O1" xsd:string
 property_value: monoIsotopicMass: "-18.01056027" xsd:double
-property_value: specificities: "(K)&(D,E)" xsd:string
+property_value: specificities: "(K,Protein N-term)&(D,E,Protein C-term)" xsd:string
 is_a: XLMOD:00006 ! heterofunctional cross-linker
 is_a: XLMOD:00008 ! zero-length cross-linker
 relationship: has_reactive_group XLMOD:00146 ! dimethylether
