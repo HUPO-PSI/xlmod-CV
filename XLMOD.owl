@@ -12,7 +12,7 @@
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/xlmod.owl">
         <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/xlmod/1.5.4/xlmod.owl"/>
         <oboInOwl:auto-generated-by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBO-Edit 2.3.1</oboInOwl:auto-generated-by>
-        <oboInOwl:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">29:04:2026 10:29</oboInOwl:date>
+        <oboInOwl:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">16:06:2026 11:25</oboInOwl:date>
         <oboInOwl:default-namespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XLMOD</oboInOwl:default-namespace>
         <oboInOwl:hasOBOFormatVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.2</oboInOwl:hasOBOFormatVersion>
         <oboInOwl:saved-by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Douwe Schulte</oboInOwl:saved-by>
@@ -146,6 +146,12 @@
     <!-- http://purl.obolibrary.org/obo/xlmod#minSpacerLength -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/xlmod#minSpacerLength"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/xlmod#neutralLossFormula -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/xlmod#neutralLossFormula"/>
     
 
 
@@ -3777,7 +3783,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A dimethylether (Ch3-O-CH3) reactive group that reacts with carboxyl groups.</obo:IAO_0000115>
-        <obo:specificities_ rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(D,E)</obo:specificities_>
+        <obo:specificities_ rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(D,E,Protein C-term)</obo:specificities_>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XLMOD</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XLMOD:00146</oboInOwl:id>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dimethylether</rdfs:label>
@@ -18503,7 +18509,8 @@
     <!-- http://purl.obolibrary.org/obo/XLMOD_02208 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/XLMOD_02208">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XLMOD_00005"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XLMOD_00006"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XLMOD_00008"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/xlmod#has_reactive_group"/>
@@ -18511,7 +18518,10 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4-(4,6-Dimethoxy-1,3,5-triazin-2-yl)-4-methylmorpholinium chloride.</obo:IAO_0000115>
+        <obo:bridgeFormula_ rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-H2 -O1</obo:bridgeFormula_>
+        <obo:monoIsotopicMass_ rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-18.01056027</obo:monoIsotopicMass_>
         <obo:reactionSites_ rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</obo:reactionSites_>
+        <obo:specificities_ rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(K,Protein N-term)&amp;(D,E,Protein C-term)</obo:specificities_>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XLMOD</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XLMOD:02208</oboInOwl:id>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DMTMM</rdfs:label>
@@ -20409,6 +20419,7 @@
         <obo:reactionSites_ rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</obo:reactionSites_>
         <xlmod:maxSpacerLength rdf:datatype="http://www.w3.org/2001/XMLSchema#float">20.0</xlmod:maxSpacerLength>
         <xlmod:minSpacerLength rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</xlmod:minSpacerLength>
+        <xlmod:neutralLossFormula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-H2 -O1</xlmod:neutralLossFormula>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XLMOD</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XLMOD:02258</oboInOwl:id>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PhoX</rdfs:label>
