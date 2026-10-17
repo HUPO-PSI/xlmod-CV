@@ -131,6 +131,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/stubDefinition_ -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/stubDefinition_"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/waveLengthRange_ -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/waveLengthRange_"/>
@@ -35146,6 +35152,35 @@
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem CID:7015685</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem_Compound:4093968</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unimod:2026</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/XLMOD_09321 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/XLMOD_09321">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/XLMOD_00005"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/xlmod#has_reactive_group"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/XLMOD_00101"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tris-succinimidyl trioxane.</obo:IAO_0000115>
+        <obo:bridgeFormula_ rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C15 H18 O6</obo:bridgeFormula_>
+        <obo:reactionSites_ rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</obo:reactionSites_>
+        <obo:spacerLength_ rdf:datatype="http://www.w3.org/2001/XMLSchema#float">28.0</obo:spacerLength_>
+        <obo:stubDefinition_ rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CID = C5 H6 O2, -H2 -O1 : C5 H6 O2, -H2 -O1 : C5 H6 O2, -H2 -O1</obo:stubDefinition_>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XLMOD</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XLMOD:09321</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TSTO</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/XLMOD_09321"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tris-succinimidyl trioxane.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1038/s41467-025-60642-3</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:40593561</oboInOwl:hasDbXref>
     </owl:Axiom>
 </rdf:RDF>
 
